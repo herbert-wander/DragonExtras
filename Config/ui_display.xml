@@ -1,0 +1,58 @@
+<configs>
+	<append xpath="/ui_display_info/crafting_category_display">
+		<crafting_category_list display_type="campfireOven">
+			<!-- <crafting_category name="" icon="ui_game_symbol_campfire" display_name="lblAll" />
+			<crafting_category name="Drink/Cooking" icon="ui_game_symbol_water" display_name="lblCategoryChemicals" /> -->
+			<crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
+			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
+			<crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="lblCategoryChemicals" />
+		</crafting_category_list>
+	</append>
+</configs>
+<!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+This UI system can display all passive effects on an item - the base stats.
+
+It can also display CVARS that are added when using the item with these exact 2 actions:
+onSelfPrimaryActionEnd
+onSelfSecondaryActionEnd
+
+<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medicalRegHealthAmount" operation="add" value="14"/>
+
+The "name" is the name of the cvar.
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+display_type="Integer"	;	The values are "Integer", "Decimal", "Bool", and "Percent"
+show_inverted="true"	;
+negative_preferred="true";	For item comparisons sometimes lower is better.
+
+-->
+
+
+
+
+<!--
+
+			<display_entry name="MaxRange" title_key="statMaxRange"/>
+			<display_entry name="KickDegreesHorizontal" title_key="statKickDegreesHorizontal"/>
+
+The 6th line on the UI displays no text, only a number.
+
+Shotgun ammo / shotguns display the damage per single ray.
+
+Values <1, like the recoil of a pistol (0.8) display as zero rounding down.
+Suggest rounding to nearest integer instead.
+
+
+Figure out a way to display these item stats and/or convert them to mineffects.
+<item name="ammoRocketHE">
+	<property class="Action1">
+		<property name="Class" value="Projectile"/>
+		<property name="Explosion.RadiusBlocks" value="5"/>
+		<property name="Explosion.BlockDamage" value="500"/>
+		<property name="Explosion.RadiusEntities" value="5"/>
+		<property name="Explosion.EntityDamage" value="350"/>
+
+
+display_leading_plus="true"
+-->

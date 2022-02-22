@@ -1,0 +1,10 @@
+<configs>
+	<append xpath="/perks">
+		<!-- Dwarf Skills (Books) -->
+		<perk name="perkDwarfSkillsPowerStrikes" parent="skillDwarfSkills" max_level="1" base_skill_point_cost="0" desc_key="perkDwarfSkillsPowerStrikesDesc" long_desc_key="perkDwarfSkillsPowerStrikesLongDesc">
+			<effect_group>
+				<passive_effect name="HyperthermalResist" operation="base_add" level="1" value="10"/>
+			</effect_group>
+		</perk>
+	</append>
+</configs>

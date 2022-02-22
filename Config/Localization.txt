@@ -1,0 +1,5 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+campfireOven,blocks,Workstation,,,"Scrap Oven"
+campfireOvenDesc,blocks,Workstation,,,"Looks like a oven but works like a campfire, Hudur!"
+scrapRefrigerator,blocks,Block,,,"Scrap Refrigerator"
+scrapRefrigeratorDesc,blocks,Block,,,"It only works for half of the day to save energy!"
